@@ -5,24 +5,15 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-Console.Write("Введите число ");
-int num = Math.Abs(int.Parse(Console.ReadLine()!));
-
-switch(num)
-{
-    case 1:
-	    Console.WriteLine("x > 0, y > 0");
-	    break;
-    case 2:
-	    Console.WriteLine("x < 0, y > 0");
-	    break;
-    case 3:
-	    Console.WriteLine("x < 0, y < 0");
-	    break;
-    case 4:
-	    Console.WriteLine("x > 0, y < 0");
-	    break;
-    default:
-	    Console.WriteLine("Введено некорректное число");
-	    break;
-}
+coor_x = int(input('Введите координаты x '))
+coor_y = int(input('Введите координаты y '))
+if coor_x > 0 and coor_y > 0:
+	print('1')
+elif coor_x > 0 and coor_y < 0:
+	print('2')
+elif coor_x < 0 and coor_y < 0:
+	print('3')
+elif coor_x < 0 and coor_y > 0:
+	print('4')
+else:
+	print('Введено некорректное число');
