@@ -4,20 +4,10 @@
 # - 7 -> да
 # - 1 -> нет
 
-day = input('Введите день недели (1-7)')
-if day == '1':
-    print('Понедельник')
-elif day == '2':
-    print('Вторник')
-elif day == '3':
-    print('Среда')
-elif day == '2':
-    print('Вторник')
-elif day == '2':
-    print('Вторник')
-elif day == '2':
-    print('Вторник')
-elif day == '2':
-    print('Вторник')
-
-    case _: print('Такого дня недели нет')
+day = input('Введите день недели (1-7) ')
+if day == '1' or day == '2' or day == '3' or day == '4' or day == '5':
+    print('Нет, не выходной')
+elif day == '6' or day == '7':
+    print('Да, выходной')
+else:
+    print('Такого дня недели нет')
