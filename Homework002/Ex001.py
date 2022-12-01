@@ -4,3 +4,14 @@
 #
 # - 6782 -> 23
 # - 0,56 -> 11
+
+number = input('Введите число: ')
+
+sum = 0
+
+for a in number:
+
+    if a.isdigit():
+        sum += int(a)
+
+print(sum)
