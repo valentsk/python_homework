@@ -10,7 +10,7 @@ number = int(input('Введите число: '))
 sum = 0
 list_numbers = []
 for i in range(number):
-    list_numbers[i].append(random.randint(0, 10))
+    list_numbers.append(random.randint(0, 10))
 print(list_numbers)
 for i in range(1, number, 2):
     sum += list_numbers[i]
