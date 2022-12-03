@@ -8,6 +8,7 @@ number = int(input('Введите точность: '))
 
 pi_leibnica = 0
 num_leib = 4
+
 for i in range(1, 10 ** 8, 4):
     pi_leibnica += num_leib / i - num_leib / (i + 2)
 print(f'Число Пи = {pi_leibnica}')
