@@ -32,22 +32,26 @@ def search_data(data):
                 for item in data:
                     if search in item:
                         print(f'search {search} item-{item}')
-                        return item
+                        print(item, sep=',')
+                        # return item
         case '2':
             if len(data) > 0:
                 for item in data:
                     if search in item[1]:
-                        return item
+                        print(item, sep=',')
+                        # return item
         case '3':
             if len(data) > 0:
                 for item in data:
                     if search in item[2]:
-                        return item
+                        print(item, sep=',')
+                        # return item
         case '4':
             if len(data) > 0:
                 for item in data:
                     if search in item[3]:
-                        return item
+                        print(item, sep=',')
+                        # return item
         case '5':
             if len(data) > 0:
                 for item in data:
